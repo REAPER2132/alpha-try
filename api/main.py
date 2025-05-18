@@ -38,7 +38,4 @@ async def get_marks(name: List[str] = Query(None)):
 
     return {"marks": marks}
 
-@app.get("/")
-async def root():
-    return {"message": "Naami's student Marks API. Use /api?name=John to query marks."}
 
